@@ -2,7 +2,7 @@
     max-width: $grid-width;
     background-color: rgb(14, 163, 0);
     margin: 0 auto;
-    @include flexItems;
+    @include flexItems(space-between);
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
     }

@@ -1,6 +1,6 @@
 .dashboard-wrapper {
     width: 100%;
-    background-color: $background-color-admin;
+    background-color: $color-grey-light;
     // display: flex;
     // align-items: center;
     // justify-content: space-between;
@@ -17,7 +17,7 @@
 
 .dashboard-content {
     margin-left: 17%;
-    min-height: 100vh;
+    min-height: 180vh;
     max-width: 100%;
     background-color: lightcoral;
 }
