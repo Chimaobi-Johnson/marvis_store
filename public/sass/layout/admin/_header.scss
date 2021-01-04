@@ -1,0 +1,24 @@
+
+.admin-header {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    // justify-content: s;
+
+    &__addbutton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: auto;
+    }
+
+    &__notificationcontainer {
+
+    }
+    &__searchcontainer {
+
+    }
+    &__dpcontainer {
+
+    }
+}

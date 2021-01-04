@@ -1,0 +1,23 @@
+.dashboard-wrapper {
+    width: 100%;
+    background-color: $background-color-admin;
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
+}
+
+.admin-sidebar {
+    width: 17%;
+    background-color:lawngreen;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.dashboard-content {
+    margin-left: 17%;
+    min-height: 100vh;
+    max-width: 100%;
+    background-color: lightcoral;
+}
