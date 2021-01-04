@@ -1,7 +1,7 @@
-
 .admin-header {
     padding: 1rem;
-    background-color: rgb(65, 59, 116);
+    background-color: $color-white;
+    color: $text-color-secondary;
     position: fixed;
     top: 0;
     right: 0;
@@ -10,8 +10,9 @@
 
     &__left {
         margin-right: auto;
+        transition: display .5s;
         .admin-add-container {
-            // display: none;
+            display: none;
             background-color: $color-white;
             border-radius: .5rem;
             position: absolute;

@@ -32,7 +32,8 @@ body {
 
 .admin-header {
   padding: 1rem;
-  background-color: #413b74;
+  background-color: #fff;
+  color: #3a3a3a;
   position: fixed;
   top: 0;
   right: 0;
@@ -41,8 +42,10 @@ body {
   align-items: center;
   justify-content: "space-between"; }
   .admin-header__left {
-    margin-right: auto; }
+    margin-right: auto;
+    transition: display .5s; }
     .admin-header__left .admin-add-container {
+      display: none;
       background-color: #fff;
       border-radius: .5rem;
       position: absolute;
