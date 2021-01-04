@@ -1,15 +1,13 @@
 .row {
     max-width: $grid-width;
-    background-color: rgb(14, 163, 0);
     margin: 0 auto;
     @include flexItems(space-between);
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
     }
-
+    
     // attribute selector to select all classes that start with col-
     [class^="col-"] {
-        background-color: lightseagreen;
         // float: left;
         &:not(:last-child) {
             margin-right: $gutter-horizontal;

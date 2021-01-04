@@ -17,6 +17,7 @@
             <div class="admin-sidebar__contentbox">
                 <h5 class="admin-sidebar__heading1">Store</h5>
                 <ul>
+                    <li><a href="#"><i class="fa fa-bar-chart" aria-hidden="true"></i><span>Dashboard</span></a></li>
                     <li><a href="#"><i class="fa fa-user-o" aria-hidden="true"></i><span>Users</span></a></li>
                     <li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i><span>Products</span></a></li>
                     <li><a href="#"><i class="fa fa-money" aria-hidden="true"></i><span>Accounts</span></a></li>
@@ -33,6 +34,8 @@
 
 
         <div class="dashboard-content">
+
+            <!--HEADER START-->
             <div class="admin-header">
                 <div class="admin-header__left">
                     <div onclick="showMenu('admin-add-container')" class="admin-header__addbutton">
@@ -61,6 +64,65 @@
                     </div>
                 </div>
             </div>
+            <!--HEADER END-->
+
+            <div class="dashboard-content__main">
+                <h4>Hi Jone, Welcome back</h4>
+                <p>Awesome portfolio dashboard</p>
+                <div class="admin-breadcrumb align-flexstart">
+                    <div>Dashboard</div>
+                    <div>/</div>
+                    <div>Users</div>
+                </div>
+                <div class="row align-flexstart">
+                    <div class="col-1-of-3">
+                        <div class="statbox-container">
+                            <div class="statbox">
+                                <div class="statbox__left">
+                                    <span><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                                </div>
+                                <div class="statbox__right">
+                                    <p>Products</p>
+                                    <span>203</span>
+                                </div>
+                            </div>
+                            <div class="statbox">
+                                <div class="statbox__left">
+                                    <span><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                                </div>
+                                <div class="statbox__right">
+                                    <p>Posts</p>
+                                    <span>203</span>
+                                </div>
+                            </div>
+                            <div class="statbox">
+                                <div class="statbox__left">
+                                    <span><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                                </div>
+                                <div class="statbox__right">
+                                    <p>Comments</p>
+                                    <span>203</span>
+                                </div>
+                            </div>
+                            <div class="statbox">
+                                <div class="statbox__left">
+                                    <span><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                                </div>
+                                <div class="statbox__right">
+                                    <p>Categories</p>
+                                    <span>203</span>
+                                </div>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="col-2-of-3">
+                        <div class="line-chart-container">
+                            <canvas id="reportChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- <section class="grid-test">
                 <div class="row">
                     <div class="col-1-of-2">
@@ -131,5 +193,6 @@
 
   
 </body>
-<script src="../scripts/admin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="../scripts/admin.js"></script>
 </html>

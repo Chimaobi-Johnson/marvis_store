@@ -10,5 +10,7 @@
     margin-left: 17%;
     min-height: 180vh;
     max-width: 100%;
-    background-color: lightcoral;
+    &__main {
+        padding: 8rem 3rem 5rem 3rem;
+    }
 }

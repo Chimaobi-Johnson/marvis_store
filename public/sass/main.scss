@@ -9,6 +9,8 @@
 @import 'abstracts/variables';
 
 @import 'components/button';
+@import 'components/statbox';
+@import 'components/linechart';
 
 @import 'layout/admin/dashboard';
 @import 'layout/admin/header';
@@ -17,6 +19,6 @@
 @import 'layout/grid';
 
 
-// @import 'pages/admin/home';
+@import 'pages/admin/dashboard';
 
 

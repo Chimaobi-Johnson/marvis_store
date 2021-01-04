@@ -1,0 +1,30 @@
+.statbox-container {
+    @include flexItems(space-between);
+    flex-wrap: wrap;
+}
+
+.statbox {
+    @include flexItems(space-between);
+    width: 45%;
+    font-size: 1.8rem;
+    padding: 1rem 1.4rem;
+    margin-top: 1rem;
+    background-color: $color-white;
+    &__left {
+        flex-basis: 35%;
+    }
+    &__right {
+        flex: 1;
+        p {
+            color: $text-color-primary-light-2;
+            font-size: 1.3rem;
+            padding-bottom: .3rem;
+        }
+        span {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    }
+   
+}
+
