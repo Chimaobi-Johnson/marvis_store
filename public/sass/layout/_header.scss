@@ -18,12 +18,42 @@
     @include flexItems(space-between);
     margin: 4rem auto;
 
+    &__logocontainer {
+        flex-basis: 28%;
+    }
+
     &__searchcontainer {
         flex-basis: 50%;
         input {
             width: 80%;
             margin: 0 auto;
             height: 4.5rem;
+            border: 1px solid #c5c5c5;
+            margin-right: -4.5rem;
+            padding-left: 1rem;
+            color: inherit;
+            font-family: inherit;
+            font-size: inherit;
+            background-color: $color-grey-light-2;
+            transition: all .3s;
+
+            &:focus {
+                outline: none;
+                border: 0;
+                background-color: $color-grey-light-3;
+            }
+
+            &::-webkit-input-placeholder {
+                font-weight: 200;
+                color: $color-grey-light;
+            }
+
+        }
+        button {
+            height: 4.5rem;
+            width: 5rem;
+            border: 1px solid #c5c5c5;;
+            outline: none;
         }
     }
 
