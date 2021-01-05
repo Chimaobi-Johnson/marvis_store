@@ -67,6 +67,33 @@ body {
       background-color: darkslategray;
       color: white; }
 
+.form-control {
+  width: 90%;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; }
+  .form-control .text-label {
+    flex-basis: 30%; }
+  .form-control .text-input {
+    flex: 1;
+    height: 3.5rem;
+    border-radius: 4px;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    outline: none;
+    margin: 1rem 0;
+    border: 1px solid #cdcdcd;
+    padding-left: 1rem; }
+    .form-control .text-input:focus {
+      width: 100%;
+      outline: none;
+      background-color: #ececec; }
+    .form-control .text-input::-webkit-input-placeholder {
+      font-weight: 200;
+      color: #cccdce; }
+
 .dashboard-wrapper {
   width: 100%;
   background-color: #ebebeb; }
@@ -245,3 +272,15 @@ body {
   border-radius: 5px; }
   .admin-breadcrumb div {
     margin-right: .5rem; }
+
+.product-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #fff;
+  padding: 3rem;
+  border-radius: 0.5rem; }
+  .product-form__left {
+    flex-basis: 50%; }
+  .product-form__right {
+    flex: 1; }

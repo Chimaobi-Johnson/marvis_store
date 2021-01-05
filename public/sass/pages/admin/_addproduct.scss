@@ -1,0 +1,12 @@
+.product-form {
+    @include flexItems(space-evenly);
+    background-color: $color-white;
+    padding: 3rem;
+    border-radius: $border-radius-small;
+    &__left {
+        flex-basis: 50%;
+    }
+    &__right {
+        flex: 1;
+    }
+}
