@@ -1,3 +1,7 @@
+.product-form-container {
+    min-height: 70vh;
+    background-color: $color-white;
+}
 .product-form {
     @include flexItems(space-evenly);
     background-color: $color-white;

@@ -15,6 +15,72 @@ body {
 .align-flexstart {
   align-items: flex-start !important; }
 
+.justify-flexstart {
+  justify-content: flex-start !important; }
+
+.mt-10 {
+  margin-top: 1rem; }
+
+.mt-20 {
+  margin-top: 2rem; }
+
+.mt-30 {
+  margin-top: 3rem; }
+
+.mt-40 {
+  margin-top: 4rem; }
+
+.mt-50 {
+  margin-top: 5rem; }
+
+.mt-60 {
+  margin-top: 6rem; }
+
+.mt-70 {
+  margin-top: 7rem; }
+
+.btn, .btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 0.5rem;
+  transition: all .2s;
+  position: relative;
+  font-size: 1.3rem;
+  color: #3a3a3a;
+  box-shadow: 0 0.5rem 1rem rgba(204, 205, 206, 0.6);
+  border: none;
+  cursor: pointer; }
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0; }
+
+.btn:active, .btn:focus {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.btn-primary {
+  background-color: #014463;
+  color: aliceblue; }
+
+.btn-default {
+  background-color: #ebebeb; }
+
+.btn-sm {
+  padding: 0.8rem 1rem; }
+
+.btn-md {
+  padding: 1.2rem 2rem; }
+
+.btn-lg {
+  padding: 2rem 3.5rem; }
+
 .statbox-container {
   display: flex;
   align-items: center;
@@ -272,6 +338,10 @@ body {
   border-radius: 5px; }
   .admin-breadcrumb div {
     margin-right: .5rem; }
+
+.product-form-container {
+  min-height: 70vh;
+  background-color: #fff; }
 
 .product-form {
   display: flex;
