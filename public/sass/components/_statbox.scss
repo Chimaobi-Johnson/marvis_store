@@ -12,6 +12,9 @@
     background-color: $color-white;
     &__left {
         flex-basis: 35%;
+        img {
+            width: 80%;
+        }
     }
     &__right {
         flex: 1;

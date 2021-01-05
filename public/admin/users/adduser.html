@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="https://use.fontawesome.com/fb755e7a69.js"></script>
+    <title>Dashboard - Users</title>
+</head>
+<body>
+    <div class="dashboard-wrapper">
+
+        <div class="admin-sidebar">
+            <div class="admin-sidebar__logocontainer">
+                <h3>Marvis</h3>
+            </div>
+            <div class="admin-sidebar__contentbox">
+                <h5 class="admin-sidebar__heading1">Store</h5>
+                <ul>
+                    <li><a href="../dashboard.html"><i class="fa fa-bar-chart" aria-hidden="true"></i><span>Dashboard</span></a></li>
+                    <li><a href="../users/allusers.html"><i class="fa fa-user-o" aria-hidden="true"></i><span>Users</span></a></li>
+                    <li><a href="../products/allproducts.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i><span>Products</span></a></li>
+                    <li><a href="#"><i class="fa fa-money" aria-hidden="true"></i><span>Accounts</span></a></li>
+                </ul>
+            </div>
+            <div class="admin-sidebar__contentbox">
+                <h5 class="admin-sidebar__heading1">Blog</h5>
+                <ul>
+                    <li><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><span>Posts</span></a></li>
+                    <li><a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i><span></span>Comments</a></li>
+                </ul>
+            </div>
+        </div> <!-- Sidebar end -->
+
+
+        <div class="dashboard-content">
+
+            <!--HEADER START-->
+            <div class="admin-header">
+                <div class="admin-header__left">
+                    <div onclick="showMenu('admin-add-container')" class="admin-header__addbutton">
+                        <span><i class="fa fa-plus" aria-hidden="true"></i></span>
+                        <h5>New</h5>
+                    </div>
+                    <div onblur="showMenu('admin-add-container')" id="admin-add-container" class="admin-add-container">
+                        <ul>
+                            <li onclick="showMenu('admin-add-container')"><a href="../users/adduser.html">Add User</a></li>
+                            <li onclick="showMenu('admin-add-container')"><a href="#">Add Post</a></li>
+                            <li onclick="showMenu('admin-add-container')"><a href="../products/addproduct.html">Add Product</a></li>
+                            <li onclick="showMenu('admin-add-container')"><a href="#">Add Payment</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="admin-header__right">
+                    <div class="admin-header__searchcontainer">
+                        <input type="search" name="search" placeholder="Search..." value="" />
+                        <button class="admin-header__searchicon"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="admin-header__notificationcontainer">
+                        <i class="fa fa-bell-o" aria-hidden="true"></i>
+                        <span class="admin-notification-number">12</span>
+                    </div>
+                    <div class="admin-header__dpcontainer">
+                        <img src="https://picsum.photos/id/1005/150/150" alt="" />
+                    </div>
+                </div>
+            </div>
+            <!--HEADER END-->
+
+            <div class="dashboard-content__main">
+                <h4>Hi Jone, Welcome back</h4>
+                <p>Awesome portfolio dashboard</p>
+                <div class="admin-breadcrumb align-flexstart">
+                    <div>Dashboard</div>
+                    <div>/</div>
+                    <div>Add User</div>
+                </div>
+                <div class="product-form-container">
+
+                    <form name="admin_user" class="add-user-form align-flexstart" onsubmit="" method="POST">
+                        <div class="add-user-form__left">
+                            <div class="form-control">
+                                <label class="text-label" for="firstName">First Name</label>
+                                <input class="text-input" type="text" placeholder="Enter irst Name" name="firstName" id="firstName" />
+                            </div>
+                            <div class="form-control">
+                                <label class="text-label" for="lastName">Last Name</label>
+                                <input class="text-input" type="text" placeholder="Enter Last Name" name="lastName" id="lastName" />
+                            </div>
+                            <div class="form-control">
+                                <label class="text-label" for="email">E-mail</label>
+                                <input class="text-input" type="email" placeholder="Enter E-mail" name="email" id="email" />
+                            </div>
+                            <div class="form-control">
+                                <label class="text-label" for="productCategory">Gender</label>
+                                <select class="text-input" id="productCategory" name="productCategory" value="">
+                                    <option value=""></option>
+                                    <option value="Electronics">Male</option>
+                                    <option value="Clothes">Female</option>
+                                    <option value="Gaming">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-control">
+                                <label class="text-label" for="address">Address</label>
+                                <textarea class="text-input"></textarea>
+                            </div>
+
+                            <div class="form-control">
+                                <label class="text-label" for="lastName">Password</label>
+                                <input class="text-input" type="password" placeholder="Enter Last Name" name="lastName" id="lastName" />
+                            </div>
+                            <div class="form-control">
+                                <label class="text-label" for="email">Confirm Password</label>
+                                <input class="text-input" type="password" placeholder="Enter E-mail" name="email" id="email" />
+                            </div>
+
+                            <div class="form-control justify-flexstart mt-70">
+                                <input type="button" class="btn btn-default btn-md" value="Submit" />
+                            </div>
+                        </div>
+                        <div class="add-user-form__right">
+                            <div class="form-control">
+                                <label class="text-label" for="productCategory">Role</label>
+                                <select class="text-input" id="productCategory" name="productCategory" value="">
+                                    <option value=""></option>
+                                    <option value="Electronics">Admin</option>
+                                    <option value="Clothes">Editor</option>
+                                    <option value="Gaming">Suscriber</option>
+                                </select>
+                            </div>
+                            <div class="form-control">
+                                <label class="text-label" for="userImage">User Image</label>
+                                <input type="file" class="text-input" name="userImage" id="userImage" />
+                            </div>
+                            <div class="add-user-image__view">
+                                <img src="../../images/chimaobi.jpg" alt="" />
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+            
+         </div> <!-- end of dashboard content -->
+
+
+    </div>
+
+  
+</body>
+    <script src="../../scripts/admin.js"></script>
+</html>

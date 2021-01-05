@@ -84,28 +84,33 @@
                                 <input class="text-input" type="text" placeholder="Enter Product Name" name="productname" id="productName" />
                             </div>
                             <div class="form-control">
-                                <label class="text-label" for="productName">Description</label>
-                                <input class="text-input" type="text" placeholder="Enter Brief Description" name="productname" id="productName" />
+                                <label class="text-label" for="productDescription">Description</label>
+                                <input class="text-input" type="text" placeholder="Enter Brief Description" name="productDescription" id="productDescription" />
                             </div>
                             <div class="form-control">
-                                <label class="text-label" for="productName">Price</label>
-                                <input class="text-input" type="text" name="productname" id="productName" />
+                                <label class="text-label" for="productPrice">Price</label>
+                                <input class="text-input" type="number" placeholder="Product Price" name="productPrice" id="productPrice" />
                             </div>
                             <div class="form-control">
-                                <label class="text-label" for="productName">Category</label>
-                                <input class="text-input" type="text" name="productname" id="productName" />
+                                <label class="text-label" for="productCategory">Category</label>
+                                <select class="text-input" id="productCategory" name="productCategory" value="">
+                                    <option value=""></option>
+                                    <option value="Electronics">Electronics</option>
+                                    <option value="Clothes">Clothes</option>
+                                    <option value="Gaming">Gaming</option>
+                                </select>
                             </div>
                             <div class="form-control justify-flexstart mt-60">
-                                <input type="button" class="btn btn-default btn--animated btn-md" value="Submit" />
+                                <input type="button" class="btn btn-default btn-md" value="Submit" />
                             </div>
                         </div>
                         <div class="product-form__right">
                             <div class="form-control">
-                                <label for="productImage">Image</label>
+                                <label for="productImage">Product Image</label>
                                 <input type="file" name="productImage" id="productImage" />
                             </div>
                             <div class="product-image__view">
-                                <img src="" alt="" />
+                                <img src="../../images/chimaobi.jpg" alt="" />
                             </div>
                         </div>
 

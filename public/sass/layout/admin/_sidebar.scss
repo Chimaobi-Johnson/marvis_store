@@ -6,6 +6,7 @@
  top: 0;
  left: 0;
  width: 17%;
+ padding-right: 0;
 
  &__logocontainer {
     //  text-align: center;
@@ -25,14 +26,24 @@
      ul {
          list-style-type: none;
          li {
-             padding: 1rem 0;
-             margin: 3rem 0;
-             font-size: 1.5rem;
+            //  padding: 1rem 0;
+             margin: 2rem 0;
+             font-size: 1.3rem;
              a {
-                 padding: 2rem;
+                 padding: 1.2rem;
                  text-decoration: none;
+                 transition: all .4s;
                  color: inherit;
+                 @include flexItems(space-evenly);
+                 .admin-sidebar__iconcontainer {
+                    flex-basis: 20%;
+                    img {
+                        width: 71%;
+                    }
+                 }
+              
                  span {
+                     flex: 1;
                      margin-left: 1rem;
                  }
                  &:hover {

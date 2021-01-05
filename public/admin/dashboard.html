@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://use.fontawesome.com/fb755e7a69.js"></script>
     <title>Dashboard - Home</title>
@@ -12,22 +14,23 @@
 
         <div class="admin-sidebar">
             <div class="admin-sidebar__logocontainer">
-                <h3>Marvis</h3>
+                <h3>Marvis <span style="color: #ff6384">Store</span></h3>
+                <p>Portfolio Admin Dashboard</p>
             </div>
             <div class="admin-sidebar__contentbox">
                 <h5 class="admin-sidebar__heading1">Store</h5>
                 <ul>
-                    <li><a href="./dashboard.html"><i class="fa fa-bar-chart" aria-hidden="true"></i><span>Dashboard</span></a></li>
-                    <li><a href="./users/allusers.html"><i class="fa fa-user-o" aria-hidden="true"></i><span>Users</span></a></li>
-                    <li><a href="./products/allproducts.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i><span>Products</span></a></li>
-                    <li><a href="#"><i class="fa fa-money" aria-hidden="true"></i><span>Accounts</span></a></li>
+                    <li><a href="./dashboard.html"><div class="admin-sidebar__iconcontainer"><img src="../svgs/admin/4090568461553238448.svg" alt="DB" /></div><span>Dashboard</span></a></li>
+                    <li><a href="./users/allusers.html"><div class="admin-sidebar__iconcontainer"><img src="../svgs/admin/2390192371535029669.svg" alt="US" /></div><span>Users</span></a></li>
+                    <li><a href="./products/allproducts.html"><div class="admin-sidebar__iconcontainer"><img src="../svgs/admin/4804552381535029667.svg" alt="PD" /></div><span>Products</span></a></li>
+                    <li><a href="#"><div class="admin-sidebar__iconcontainer"><img src="../svgs/admin/15948335841535029670.svg" alt="AC" /></div><span>Accounts</span></a></li>
                 </ul>
             </div>
             <div class="admin-sidebar__contentbox">
                 <h5 class="admin-sidebar__heading1">Blog</h5>
                 <ul>
-                    <li><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><span>Posts</span></a></li>
-                    <li><a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i><span></span>Comments</a></li>
+                    <li><a href="#"><div class="admin-sidebar__iconcontainer"><img src="../svgs/admin/17488728311579605530.svg" alt="PS" /></div><span>Posts</span></a></li>
+                    <li><a href="#"><div class="admin-sidebar__iconcontainer"><img src="../svgs/admin/10602332231586787993.svg" alt="CM" /></div><span>Comments</span></a></li>
                 </ul>
             </div>
         </div> <!-- Sidebar end -->
@@ -47,7 +50,7 @@
                             <li onclick="showMenu('admin-add-container')"><a href="./users/adduser.html">Add User</a></li>
                             <li onclick="showMenu('admin-add-container')"><a href="#">Add Post</a></li>
                             <li onclick="showMenu('admin-add-container')"><a href="./products/addproduct.html">Add Product</a></li>
-                            <li onclick="showMenu('admin-add-container')"><a href="#">Add Payment</a></li>
+                            <li onclick="showMenu('admin-add-container')"><a href="./categories/addcategory.html">Add Category</a></li>
                         </ul>
                     </div>
                 </div>
@@ -78,7 +81,7 @@
                         <div class="statbox-container">
                             <div class="statbox">
                                 <div class="statbox__left">
-                                    <span><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                                    <img src="../images/icons/iconfinder_box_289621.png" alt="icon" />
                                 </div>
                                 <div class="statbox__right">
                                     <p>Products</p>
@@ -87,7 +90,7 @@
                             </div>
                             <div class="statbox">
                                 <div class="statbox__left">
-                                    <span><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                                    <img src="../images/icons/iconfinder_compose_1055085.png" alt="icon" />
                                 </div>
                                 <div class="statbox__right">
                                     <p>Posts</p>
@@ -96,7 +99,7 @@
                             </div>
                             <div class="statbox">
                                 <div class="statbox__left">
-                                    <span><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                                    <img src="../images/icons/iconfinder_comments_6586151.png" alt="icon" />
                                 </div>
                                 <div class="statbox__right">
                                     <p>Comments</p>
@@ -105,7 +108,7 @@
                             </div>
                             <div class="statbox">
                                 <div class="statbox__left">
-                                    <span><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                                    <img src="../images/icons/iconfinder_stack_1287510.png" alt="icon" />
                                 </div>
                                 <div class="statbox__right">
                                     <p>Categories</p>

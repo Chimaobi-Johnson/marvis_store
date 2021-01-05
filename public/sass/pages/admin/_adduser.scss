@@ -1,9 +1,4 @@
-.product-form-container {
-    min-height: 70vh;
-    background-color: $color-white;
-}
-
-.product-form {
+.add-user-form {
     @include flexItems(space-evenly);
     background-color: $color-white;
     padding: 3rem;
@@ -16,7 +11,8 @@
     }
 }
 
-.product-image__view {
+
+.add-user-image__view {
     width: 60%;
     margin: 2rem auto;
     padding: 2rem;
