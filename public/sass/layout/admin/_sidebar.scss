@@ -15,7 +15,10 @@
      h3 {
          font-size: 2rem;
          color: #94bfff;
-         text-transform: uppercase;
+         text-transform: uppercasae;
+     }
+     p {
+         color: #dadada;
      }
  }   
 
@@ -57,5 +60,6 @@
  &__heading1 {
     font-size: 1.1rem;
     font-weight: 400;
+    color: $text-color-secondary-2;
  }
 }

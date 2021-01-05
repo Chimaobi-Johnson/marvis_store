@@ -12,6 +12,10 @@ body {
   box-sizing: border-box;
   font-family: 'Baloo 2', cursive; }
 
+.main {
+  margin: 0 10rem;
+  font-size: 1.5rem; }
+
 .align-flexstart {
   align-items: flex-start !important; }
 
@@ -286,7 +290,9 @@ body {
     .admin-sidebar__logocontainer h3 {
       font-size: 2rem;
       color: #94bfff;
-      text-transform: uppercase; }
+      text-transform: uppercasae; }
+    .admin-sidebar__logocontainer p {
+      color: #dadada; }
   .admin-sidebar__contentbox {
     margin: 4rem auto;
     color: #fff; }
@@ -314,7 +320,8 @@ body {
             background-color: #1c252f; }
   .admin-sidebar__heading1 {
     font-size: 1.1rem;
-    font-weight: 400; }
+    font-weight: 400;
+    color: #dadada; }
 
 .row {
   max-width: 114rem;
@@ -338,6 +345,47 @@ body {
     width: calc((2 * (100% - 3 * 6rem) / 4) + 6rem); }
   .row .col-3-of-4 {
     width: calc((3 * (100% - 3 * 6rem) / 4) + 2 * 6rem); }
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .header-top ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; }
+    .header-top ul li {
+      border-bottom: 1px solid #eaeaea; }
+      .header-top ul li a {
+        text-decoration: none;
+        color: inherit;
+        padding: 2rem 1rem; }
+
+.header-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4rem auto; }
+  .header-main__searchcontainer {
+    flex-basis: 50%; }
+    .header-main__searchcontainer input {
+      width: 80%;
+      margin: 0 auto;
+      height: 4.5rem; }
+  .header-main__shoppingcart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .header-main__shoppingcart .cartlogo-container {
+      flex-basis: 20%; }
+      .header-main__shoppingcart .cartlogo-container img {
+        width: 90%; }
+    .header-main__shoppingcart .carttext-container {
+      flex: 1;
+      font-size: 1.2rem; }
+      .header-main__shoppingcart .carttext-container h3 {
+        text-transform: uppercase; }
 
 .admin-breadcrumb {
   display: flex;

@@ -1,0 +1,46 @@
+.header-top {
+    @include flexItems(space-between);
+    ul {
+        list-style-type: none;
+        @include flexItems(space-evenly);
+        li {
+            border-bottom: 1px solid #eaeaea;
+            a {
+                text-decoration: none;
+                color: inherit;
+                padding: 2rem 1rem; 
+            }
+        }
+    }
+}
+
+.header-main {
+    @include flexItems(space-between);
+    margin: 4rem auto;
+
+    &__searchcontainer {
+        flex-basis: 50%;
+        input {
+            width: 80%;
+            margin: 0 auto;
+            height: 4.5rem;
+        }
+    }
+
+    &__shoppingcart {
+        @include flexItems(space-between);
+        .cartlogo-container {
+            flex-basis: 20%;
+            img {
+                width: 90%
+            }
+        }
+        .carttext-container {
+            flex: 1;
+            font-size: 1.2rem;
+            h3 {
+               text-transform: uppercase; 
+            }
+        }
+    }
+}
