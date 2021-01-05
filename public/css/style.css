@@ -10,7 +10,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: "Lato", sans-serif; }
+  font-family: 'Baloo 2', cursive; }
 
 .align-flexstart {
   align-items: flex-start !important; }
