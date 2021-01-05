@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="https://use.fontawesome.com/fb755e7a69.js"></script>
+    <title>Dashboard - Users</title>
+</head>
+<body>
+    <div class="dashboard-wrapper">
+
+        <div class="admin-sidebar">
+            <div class="admin-sidebar__logocontainer">
+                <h3>Marvis</h3>
+            </div>
+            <div class="admin-sidebar__contentbox">
+                <h5 class="admin-sidebar__heading1">Store</h5>
+                <ul>
+                    <li><a href="../dashboard.html"><i class="fa fa-bar-chart" aria-hidden="true"></i><span>Dashboard</span></a></li>
+                    <li><a href="../users/allusers.html"><i class="fa fa-user-o" aria-hidden="true"></i><span>Users</span></a></li>
+                    <li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i><span>Products</span></a></li>
+                    <li><a href="#"><i class="fa fa-money" aria-hidden="true"></i><span>Accounts</span></a></li>
+                </ul>
+            </div>
+            <div class="admin-sidebar__contentbox">
+                <h5 class="admin-sidebar__heading1">Blog</h5>
+                <ul>
+                    <li><a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><span>Posts</span></a></li>
+                    <li><a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i><span></span>Comments</a></li>
+                </ul>
+            </div>
+        </div> <!-- Sidebar end -->
+
+
+        <div class="dashboard-content">
+
+            <!--HEADER START-->
+            <div class="admin-header">
+                <div class="admin-header__left">
+                    <div onclick="showMenu('admin-add-container')" class="admin-header__addbutton">
+                        <span><i class="fa fa-plus" aria-hidden="true"></i></span>
+                        <h5>New</h5>
+                    </div>
+                    <div onblur="showMenu('admin-add-container')" id="admin-add-container" class="admin-add-container">
+                        <ul>
+                            <li onclick="showMenu('admin-add-container')"><a href="#">Add Post</a></li>
+                            <li onclick="showMenu('admin-add-container')"><a href="#">Add Product</a></li>
+                            <li onclick="showMenu('admin-add-container')"><a href="#">Add Payment</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="admin-header__right">
+                    <div class="admin-header__searchcontainer">
+                        <input type="search" name="search" placeholder="Search..." value="" />
+                        <button class="admin-header__searchicon"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </div>
+                    <div class="admin-header__notificationcontainer">
+                        <i class="fa fa-bell-o" aria-hidden="true"></i>
+                        <span class="admin-notification-number">12</span>
+                    </div>
+                    <div class="admin-header__dpcontainer">
+                        <img src="https://picsum.photos/id/1005/150/150" alt="" />
+                    </div>
+                </div>
+            </div>
+            <!--HEADER END-->
+
+            <div class="dashboard-content__main">
+                <h4>Hi Jone, Welcome back</h4>
+                <p>Awesome portfolio dashboard</p>
+                <div class="admin-breadcrumb align-flexstart">
+                    <div>Dashboard</div>
+                    <div>/</div>
+                    <div>Users</div>
+                </div>
+                <div class="table-container">
+
+                    <table class="users-table">
+                        <tr>
+                          <th>S/N</th>
+                          <th>Name</th>
+                          <th>Address</th>
+                          <th>Products Purchased</th>
+                          <th>Actions</th>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>Alfreds Futterkiste</td>
+                          <td>Maria Anders</td>
+                          <td>Germany</td>
+                          <td><div>
+                              <i class="fa fa-eye" aria-hidden="true"></i>
+                              <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                              <i class="fa fa-trash-o" aria-hidden="true"></i>
+                         </div></td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Berglunds snabbköp</td>
+                          <td>Christina Berglund</td>
+                          <td>Sweden</td>
+                        </tr>
+                        <tr>
+                          <td>3</td> 
+                          <td>Centro comercial Moctezuma</td>
+                          <td>Francisco Chang</td>
+                          <td>Mexico</td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>Ernst Handel</td>
+                          <td>Roland Mendel</td>
+                          <td>Austria</td>
+                        </tr>
+                        <tr>
+                          <td>5</td>
+                          <td>Island Trading</td>
+                          <td>Helen Bennett</td>
+                          <td>UK</td>
+                        </tr>
+                        <tr>
+                          <td>6</td>
+                          <td>Königlich Essen</td>
+                          <td>Philip Cramer</td>
+                          <td>Germany</td>
+                        </tr>
+                        <tr>
+                          <td>7</td>
+                          <td>Laughing Bacchus Winecellars</td>
+                          <td>Yoshi Tannamuri</td>
+                          <td>Canada</td>
+                        </tr>
+                        <tr>
+                          <td>8</td>
+                          <td>Magazzini Alimentari Riuniti</td>
+                          <td>Giovanni Rovelli</td>
+                          <td>Italy</td>
+                        </tr>
+                        <tr>
+                          <td>9</td>
+                          <td>North/South</td>
+                          <td>Simon Crowther</td>
+                          <td>UK</td>
+                        </tr>
+                        <tr>
+                          <td>10</td>
+                          <td>Paris spécialités</td>
+                          <td>Marie Bertrand</td>
+                          <td>France</td>
+                        </tr>
+                      </table>
+
+                </div>
+            </div>
+            
+         </div> <!-- end of dashboard content -->
+
+
+    </div>
+
+  
+</body>
+    <script src="../scripts/admin.js"></script>
+</html>

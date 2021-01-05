@@ -45,6 +45,28 @@ body {
 .line-chart-container {
   background-color: #fff; }
 
+.table-container {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 1rem; }
+  .table-container .users-table {
+    font-family: "Lato", sans-serif;
+    border-collapse: collapse;
+    width: 100%; }
+    .table-container .users-table td, .table-container .users-table th {
+      border: 1px solid #ddd;
+      padding: .8rem; }
+    .table-container .users-table tr:nth-child(even) {
+      background-color: #f2f2f2; }
+    .table-container .users-table tr:hover {
+      background-color: #ddd; }
+    .table-container .users-table th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: darkslategray;
+      color: white; }
+
 .dashboard-wrapper {
   width: 100%;
   background-color: #cccdce; }
@@ -167,6 +189,7 @@ body {
     padding-bottom: 1rem; }
     .admin-sidebar__logocontainer h3 {
       font-size: 2rem;
+      color: #94bfff;
       text-transform: uppercase; }
   .admin-sidebar__contentbox {
     margin: 4rem auto;
