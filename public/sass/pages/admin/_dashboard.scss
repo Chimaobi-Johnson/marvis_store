@@ -1,6 +1,9 @@
 .admin-breadcrumb {
     @include flexItems(flex-start);
     margin: 2rem auto;
+    background-color: $color-white;
+    padding: 1rem;
+    border-radius: 5px;
     div {
         margin-right: .5rem;
     }

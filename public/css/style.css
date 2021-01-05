@@ -69,7 +69,7 @@ body {
 
 .dashboard-wrapper {
   width: 100%;
-  background-color: #cccdce; }
+  background-color: #ebebeb; }
 
 .dashboard-content {
   margin-left: 17%;
@@ -150,7 +150,7 @@ body {
       color: inherit;
       font-family: inherit;
       font-size: inherit;
-      background-color: #f4f2f2;
+      background-color: #ebebeb;
       padding: .7rem 2rem;
       transition: all .3s;
       margin-right: -2rem; }
@@ -164,7 +164,7 @@ body {
   .admin-header__searchicon {
     outline: none;
     border: none;
-    background-color: #f4f2f2; }
+    background-color: #ebebeb; }
     .admin-header__searchicon:active {
       outline: none; }
   .admin-header__dpcontainer {
@@ -239,6 +239,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin: 2rem auto; }
+  margin: 2rem auto;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 5px; }
   .admin-breadcrumb div {
     margin-right: .5rem; }
