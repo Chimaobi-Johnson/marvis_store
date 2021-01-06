@@ -18,7 +18,6 @@
 }
 
 .sidebar {
-    background-color: rgb(143, 141, 129);
     flex-basis: 23%;
     height: 80vh;
 }
@@ -28,15 +27,21 @@
     margin-left: 2rem;
 }
 
-.new-products {
+.new-products, .best-seller-products, .featured-products {
 
     &__top {
         @include flexItems(space-between);
-        padding: 1rem;
+        padding: 1rem 0;
+        text-transform: uppercase;
+        font-size: 1.8rem;
+        border-bottom: 3px solid #eaeaea;
+        margin-bottom: 2rem;
     }
 
     &__content {
         @include flexItems(space-between);
+        margin-bottom: 3rem;
     }
 }
+
 
