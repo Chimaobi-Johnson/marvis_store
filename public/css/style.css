@@ -625,8 +625,30 @@ body {
   margin: 2rem 10rem; }
 
 .sidebar {
-  flex-basis: 23%;
-  height: 80vh; }
+  flex-basis: 23%; }
+  .sidebar__review {
+    margin-top: 2rem;
+    text-align: center;
+    padding: 2rem;
+    border: 1px solid #eaeaea;
+    border-bottom: 4px solid #0083c1; }
+    .sidebar__review--imagecontainer {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .sidebar__review--imagecontainer img {
+        width: 100px;
+        height: 100px;
+        margin: 3rem;
+        border-radius: 100px; }
+    .sidebar__review p {
+      border-bottom: 2px solid #eaeaea;
+      padding-bottom: 1rem; }
+    .sidebar__review h3 {
+      font-weight: bold;
+      color: #014463;
+      margin-top: 2rem; }
 
 .products-container {
   flex: 1;

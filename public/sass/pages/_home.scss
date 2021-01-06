@@ -19,7 +19,33 @@
 
 .sidebar {
     flex-basis: 23%;
-    height: 80vh;
+    &__review {
+        margin-top: 2rem;
+        text-align: center;
+        padding: 2rem;
+        border: 1px solid #eaeaea;
+        border-bottom: 4px solid $color-primary;
+
+        &--imagecontainer {
+            width: 100%;
+            @include flexItems(center);
+            img {
+                width: 100px;
+                height: 100px;
+                margin: 3rem;
+                border-radius: 100px;
+            }
+        }
+        p {
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 1rem;
+        }
+        h3 {
+            font-weight: bold;
+            color: $color-primary-dark;
+            margin-top: 2rem;
+        }
+    }
 }
 
 .products-container {
