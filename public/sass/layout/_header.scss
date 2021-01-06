@@ -1,10 +1,13 @@
 .header-top {
+    font-size: 1.1rem;
     @include flexItems(space-between);
+    padding: .7rem 10rem;
+    border-bottom: 1px solid #eaeaea;
     ul {
         list-style-type: none;
         @include flexItems(space-evenly);
         li {
-            border-bottom: 1px solid #eaeaea;
+           
             a {
                 text-decoration: none;
                 color: inherit;
@@ -16,16 +19,19 @@
 
 .header-main {
     @include flexItems(space-between);
-    margin: 4rem auto;
+    margin: 4rem 10rem;
 
     &__logocontainer {
         flex-basis: 28%;
+        h2 {
+            text-transform: uppercase;
+        }
     }
 
     &__searchcontainer {
         flex-basis: 50%;
         input {
-            width: 80%;
+            width: 90%;
             margin: 0 auto;
             height: 4.5rem;
             border: 1px solid #c5c5c5;
@@ -58,7 +64,7 @@
     }
 
     &__shoppingcart {
-        @include flexItems(space-between);
+        @include flexItems(flex-end);
         .cartlogo-container {
             flex-basis: 20%;
             img {
@@ -66,11 +72,52 @@
             }
         }
         .carttext-container {
-            flex: 1;
             font-size: 1.2rem;
             h3 {
                text-transform: uppercase; 
             }
+        }
+    }
+}
+
+.header-nav {
+    background-color: $color-black;
+    padding: 2rem auto;
+    color: $color-white;
+    padding: 1rem 10rem;
+    @include flexItems(flex-start);
+
+    &__sidenav {
+        @include flexItems(space-between);
+        background-color: $color-primary;
+        margin: -1.5rem;
+        margin-left: 0rem;
+        padding: 1.5rem;
+        .sidenav-icon-container {
+            font-size: 2rem;
+        }
+        .sidenav-text-container {
+            h2 {
+                text-transform: uppercase;
+                padding-left: 1rem;
+            }
+        }
+    }
+
+    &__info {
+        @include flexItems(space-between);
+        margin-left: 4rem;
+        flex-basis: 50%;
+    }
+
+    &__offerzone {
+        margin-left: auto;
+        p {
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            padding: .5rem 1.1rem;
+            border-radius: $border-radius-small;
+            background-color: crimson;
         }
     }
 }
