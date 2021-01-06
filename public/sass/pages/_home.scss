@@ -1,0 +1,13 @@
+.landing-container {
+    @include flexItems(space-between);
+    margin: 2rem 10rem;
+    .landing-left {
+        margin-right: 2rem;
+    }
+
+    .landing-main {
+        img {
+            width: 100%;
+        }
+    }
+}

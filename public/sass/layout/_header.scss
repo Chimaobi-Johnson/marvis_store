@@ -93,7 +93,7 @@
         background-color: $color-primary;
         margin: -1.5rem;
         margin-left: 0rem;
-        padding: 1.5rem;
+        padding: 1.5rem 3.4rem;
         position: relative;
         .sidenav-icon-container {
             font-size: 2rem;
@@ -132,7 +132,7 @@
         left: 0;
         width: 100%;
         color: $text-color-primary-light;
-        background-color: $color-white;
+        background-color: rgba($color-white, 0.93);
         border: 1px solid #eaeaea;
         ul {
             list-style-type: none;

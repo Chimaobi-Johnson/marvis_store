@@ -426,7 +426,7 @@ body {
     background-color: #0083c1;
     margin: -1.5rem;
     margin-left: 0rem;
-    padding: 1.5rem;
+    padding: 1.5rem 3.4rem;
     position: relative; }
     .header-nav__sidenav .sidenav-icon-container {
       font-size: 2rem; }
@@ -456,7 +456,7 @@ body {
     left: 0;
     width: 100%;
     color: #3a3a3a;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.93);
     border: 1px solid #eaeaea; }
     .header-nav__dropdown ul {
       list-style-type: none; }
@@ -531,3 +531,13 @@ body {
   .add-user-image__view img {
     width: 100%;
     height: 100%; }
+
+.landing-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 10rem; }
+  .landing-container .landing-left {
+    margin-right: 2rem; }
+  .landing-container .landing-main img {
+    width: 100%; }

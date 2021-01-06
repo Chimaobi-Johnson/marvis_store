@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet" >
+    <link rel="stylesheet" href="./css/flexslider.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="./scripts/jquery.flexslider.js"></script>
     <script src="https://use.fontawesome.com/fb755e7a69.js"></script>
     <title>Marvis Store</title>
 </head>
@@ -83,12 +86,28 @@
                 </div>
             </header>
         </section>
-        <section class="landing-container">
+        <section class="landing-container align-flexstart">
             <div class="landing-left">
                 <img src="./images/side-banner.jpg" alt="side_banner" />
             </div>
             <div class="landing-main">
-                <img src="./images/cristina-model-smiling-on-viewer-4k-t4.jpg" alt="landing_pic" />
+                <div class="flexslider">
+                    <ul class="slides">
+                      <li data-thumb="./images/slider/slider-keys/christopher-gower-_aXa21cf7rY-unsplash.jpg">
+                        <img src="./images/slider/christopher-gower-_aXa21cf7rY-unsplash.jpg" />
+                      </li>
+                      <li data-thumb="./images/slider/slider-keys/furniture-1840463_1920.jpg">
+                        <img src="./images/slider/furniture-1840463_1920.jpg" />
+                      </li>
+                      <li data-thumb="./images/slider/slider-keys/taylor-smith-aDZ5YIuedQg-unsplash.jpg">
+                        <img src="./images/slider/taylor-smith-aDZ5YIuedQg-unsplash.jpg" />
+                      </li>
+                      <li data-thumb="./images/slider/slider-keys/louis-philippe-poitras-WMMh6BtmTMo-unsplash.jpg">
+                        <img src="./images/slider/louis-philippe-poitras-WMMh6BtmTMo-unsplash.jpg" />
+                      </li>
+                    </ul>
+                  </div>
+                <!-- <img src="./images/cristina-model-smiling-on-viewer-4k-t4.jpg" alt="landing_pic" /> -->
             </div>
         </section>
         <section class="content-box">
@@ -108,6 +127,15 @@
             </footer>
         </section>
     </div>
+    <script type="text/javascript" charset="utf-8">
+        $(window).load(function() {
+        $('.flexslider').flexslider({
+            animation: "fade",
+            slideshowSpeed: 4000,
+            controlNav: "thumbnails"
+        });
+        });
+    </script>
     <script src="./scripts/scripts.js"></script>
 </body>
 </html>
