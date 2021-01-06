@@ -11,3 +11,32 @@
         }
     }
 }
+
+.content-box {
+    @include flexItems(space-between);
+    margin: 2rem 10rem;
+}
+
+.sidebar {
+    background-color: rgb(143, 141, 129);
+    flex-basis: 23%;
+    height: 80vh;
+}
+
+.products-container {
+    flex: 1;
+    margin-left: 2rem;
+}
+
+.new-products {
+
+    &__top {
+        @include flexItems(space-between);
+        padding: 1rem;
+    }
+
+    &__content {
+        @include flexItems(space-between);
+    }
+}
+

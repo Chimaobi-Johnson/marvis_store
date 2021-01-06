@@ -1,0 +1,37 @@
+.slider-image-container {
+    position: relative;
+    .slider-image-text {
+        position: absolute;
+        bottom: 1rem;
+        right: 2rem;
+        padding: 1rem;
+        width: 60%;
+        text-align: right;
+        background: linear-gradient(-45deg, #fffdfd59, transparent);
+        // &__blackbg {
+        //     background: linear-gradient(-45deg, #13131359, transparent);
+        //     position: absolute;
+        //     bottom: 1rem;
+        //     right: 2rem;
+        //     padding: 1rem;
+        //     width: 60%;
+        //     text-align: right;
+        // }
+        // h3 {
+
+        // }
+        h1 {
+            font-size: 3.5rem;
+            text-transform: uppercase;
+        }
+        // p {
+
+        // }
+        button {
+            margin-top: 4rem;
+        }
+    }
+    img {
+        width: 100%;
+    }
+}

@@ -3,10 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- baloo google font -->
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- custom styles -->
     <link href="./css/style.css" rel="stylesheet" >
+    <!-- flexslider styles -->
     <link rel="stylesheet" href="./css/flexslider.css" type="text/css">
+    <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <!-- flexslider script -->
     <script src="./scripts/jquery.flexslider.js"></script>
     <script src="https://use.fontawesome.com/fb755e7a69.js"></script>
     <title>Marvis Store</title>
@@ -94,28 +101,130 @@
                 <div class="flexslider">
                     <ul class="slides">
                       <li data-thumb="./images/slider/slider-keys/christopher-gower-_aXa21cf7rY-unsplash.jpg">
-                        <img src="./images/slider/christopher-gower-_aXa21cf7rY-unsplash.jpg" />
+                        <div class="slider-image-container">
+                            <div class="slider-image-text">
+                                <h3 class="animate__animated animate__fadeInLeft">An animated element</h3>
+                                <h1>Main Heading here</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <button class="btn btn-primary">Buy Now</button>
+                            </div>
+                            <img src="./images/slider/christopher-gower-_aXa21cf7rY-unsplash.jpg" />
+                        </div>
                       </li>
                       <li data-thumb="./images/slider/slider-keys/furniture-1840463_1920.jpg">
-                        <img src="./images/slider/furniture-1840463_1920.jpg" />
+                        <div class="slider-image-container">
+                            <div class="slider-image-text">
+                                <h3 class="animate__animated animate__fadeInLeft">An animated element</h3>
+                                <h1>Main Heading here</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <button class="btn btn-primary">Buy Now</button>
+                            </div>
+                            <img src="./images/slider/furniture-1840463_1920.jpg" />
+                        </div>
                       </li>
                       <li data-thumb="./images/slider/slider-keys/taylor-smith-aDZ5YIuedQg-unsplash.jpg">
-                        <img src="./images/slider/taylor-smith-aDZ5YIuedQg-unsplash.jpg" />
+                        <div class="slider-image-container">
+                            <div class="slider-image-text">
+                                <h3 class="animate__animated animate__fadeInLeft">An animated element</h3>
+                                <h1>Main Heading here</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <button class="btn btn-primary">Buy Now</button>
+                            </div>
+                            <img src="./images/slider/taylor-smith-aDZ5YIuedQg-unsplash.jpg" />
+                        </div>
                       </li>
                       <li data-thumb="./images/slider/slider-keys/louis-philippe-poitras-WMMh6BtmTMo-unsplash.jpg">
-                        <img src="./images/slider/louis-philippe-poitras-WMMh6BtmTMo-unsplash.jpg" />
+                        <div class="slider-image-container">
+                            <div class="slider-image-text">
+                                <h3 class="animate__animated animate__fadeInLeft">An animated element</h3>
+                                <h1>Main Heading here</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <button class="btn btn-primary">Buy Now</button>
+                            </div>
+                            <img src="./images/slider/louis-philippe-poitras-WMMh6BtmTMo-unsplash.jpg" />
+                        </div>
                       </li>
                     </ul>
                   </div>
                 <!-- <img src="./images/cristina-model-smiling-on-viewer-4k-t4.jpg" alt="landing_pic" /> -->
             </div>
         </section>
-        <section class="content-box">
+        <section class="content-box align-flexstart">
             <div class="sidebar">
-
+                
             </div>
             <div class="products-container">
+                <div class="new-products">
+                    <div class="new-products__top">
+                        <h3>New Products</h3>
+                        <div class="new-products__controls"></div>
+                    </div>
+                    <div class="new-products__content">
+                        <div class="product-card">
+                            <div class="product-card__image">
+                                <img src="./images/living-room-2732939_1920.jpg" alt="" />
+                            </div>
+                            <div class="product-card__title">
+                                <p>Product Name</p>
+                            </div>
+                            <div class="product-card__rating">
+                                <p>Rating</p>
+                            </div>
+                            <div class="product-card__price">
+                                <p>$155.00</p>
+                            </div>
+                            <button class="product-card__btn">Add To Cart</button>
+                        </div>
 
+                        <div class="product-card">
+                            <div class="product-card__image">
+                                <img src="./images/jade-scarlato-1zBPoVwS_Jo-unsplash.jpg" alt="" />
+                            </div>
+                            <div class="product-card__title">
+                                <p>Product Name</p>
+                            </div>
+                            <div class="product-card__rating">
+                                <p>Rating</p>
+                            </div>
+                            <div class="product-card__price">
+                                <p>$155.00</p>
+                            </div>
+                            <button class="product-card__btn">Add To Cart</button>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-card__image">
+                                <img src="./images/jeshoots-com-eCktzGjC-iU-unsplash.jpg" alt="" />
+                            </div>
+                            <div class="product-card__title">
+                                <p>Product Name</p>
+                            </div>
+                            <div class="product-card__rating">
+                                <p>Rating</p>
+                            </div>
+                            <div class="product-card__price">
+                                <p>$155.00</p>
+                            </div>
+                            <button class="product-card__btn">Add To Cart</button>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-card__image">
+                                <img src="./images/mnz-ToLMORRb97Q-unsplash.jpg" alt="" />
+                            </div>
+                            <div class="product-card__title">
+                                <p>Product Name</p>
+                            </div>
+                            <div class="product-card__rating">
+                                <p>Rating</p>
+                            </div>
+                            <div class="product-card__price">
+                                <p>$155.00</p>
+                            </div>
+                            <button class="product-card__btn">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="blog-container">
