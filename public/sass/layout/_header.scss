@@ -81,18 +81,20 @@
 }
 
 .header-nav {
-    background-color: $color-black;
+    background-color: $color-black-2;
     padding: 2rem auto;
     color: $color-white;
     padding: 1rem 10rem;
     @include flexItems(flex-start);
 
     &__sidenav {
+        cursor: pointer;
         @include flexItems(space-between);
         background-color: $color-primary;
         margin: -1.5rem;
         margin-left: 0rem;
         padding: 1.5rem;
+        position: relative;
         .sidenav-icon-container {
             font-size: 2rem;
         }
@@ -118,6 +120,34 @@
             padding: .5rem 1.1rem;
             border-radius: $border-radius-small;
             background-color: crimson;
+        }
+    }
+
+    &__dropdown {
+        position: absolute;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: all .3s;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        color: $text-color-primary-light;
+        background-color: $color-white;
+        border: 1px solid #eaeaea;
+        ul {
+            list-style-type: none;
+            li {
+                a {
+                    padding: 1rem;
+                    display: block;
+                    border-bottom: 1px solid #eaeaea;
+                    text-decoration: none;
+                    color: inherit;
+                    &:hover {
+                        background-color: $color-grey-light-4;
+                    }
+                }
+            }
         }
     }
 }

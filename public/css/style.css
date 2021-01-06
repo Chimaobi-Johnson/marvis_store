@@ -160,7 +160,7 @@ body {
     .form-control .text-input:focus {
       width: 100%;
       outline: none;
-      background-color: #ececec; }
+      background-color: #eeeded; }
     .form-control .text-input::-webkit-input-placeholder {
       font-weight: 200;
       color: #cccdce; }
@@ -208,7 +208,7 @@ body {
             text-decoration: none;
             color: inherit; }
             .admin-header__left .admin-add-container ul li a:hover {
-              background-color: #ececec; }
+              background-color: #eeeded; }
   .admin-header__addbutton {
     position: relative;
     display: flex;
@@ -255,7 +255,7 @@ body {
       .admin-header__searchcontainer input:focus {
         width: 100%;
         outline: none;
-        background-color: #ececec; }
+        background-color: #eeeded; }
       .admin-header__searchcontainer input::-webkit-input-placeholder {
         font-weight: 200;
         color: #cccdce; }
@@ -388,7 +388,7 @@ body {
       .header-main__searchcontainer input:focus {
         outline: none;
         border: 0;
-        background-color: #ececec; }
+        background-color: #eeeded; }
       .header-main__searchcontainer input::-webkit-input-placeholder {
         font-weight: 200;
         color: #cccdce; }
@@ -411,7 +411,7 @@ body {
         text-transform: uppercase; }
 
 .header-nav {
-  background-color: #000;
+  background-color: #1c1c1c;
   padding: 2rem auto;
   color: #fff;
   padding: 1rem 10rem;
@@ -419,13 +419,15 @@ body {
   align-items: center;
   justify-content: flex-start; }
   .header-nav__sidenav {
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #0083c1;
     margin: -1.5rem;
     margin-left: 0rem;
-    padding: 1.5rem; }
+    padding: 1.5rem;
+    position: relative; }
     .header-nav__sidenav .sidenav-icon-container {
       font-size: 2rem; }
     .header-nav__sidenav .sidenav-text-container h2 {
@@ -445,6 +447,27 @@ body {
       padding: .5rem 1.1rem;
       border-radius: 0.5rem;
       background-color: crimson; }
+  .header-nav__dropdown {
+    position: absolute;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: all .3s;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    color: #3a3a3a;
+    background-color: #fff;
+    border: 1px solid #eaeaea; }
+    .header-nav__dropdown ul {
+      list-style-type: none; }
+      .header-nav__dropdown ul li a {
+        padding: 1rem;
+        display: block;
+        border-bottom: 1px solid #eaeaea;
+        text-decoration: none;
+        color: inherit; }
+        .header-nav__dropdown ul li a:hover {
+          background-color: #f1f0f0; }
 
 .admin-breadcrumb {
   display: flex;
