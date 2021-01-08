@@ -21,6 +21,9 @@ body {
 .justify-flexstart {
   justify-content: flex-start !important; }
 
+.boxshadow-black {
+  box-shadow: 0 0.5rem 1rem rgba(37, 37, 37, 0.6) !important; }
+
 .mt-10 {
   margin-top: 1rem; }
 
@@ -545,6 +548,81 @@ body {
         color: inherit; }
         .header-nav__dropdown ul li a:hover {
           background-color: #f1f0f0; }
+
+.footer-container {
+  width: 100%; }
+
+.footer-top {
+  background-color: #444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0; }
+  .footer-top__heading {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff; }
+  .footer-top__suscribe {
+    flex-basis: 35%;
+    margin: 0 1rem;
+    height: 4rem;
+    border-radius: 0.3rem;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    outline: none;
+    border: 1px solid #cdcdcd;
+    padding-left: 1rem; }
+    .footer-top__suscribe:focus {
+      width: 100%;
+      outline: none;
+      background-color: #eeeded; }
+    .footer-top__suscribe::-webkit-input-placeholder {
+      font-weight: 200;
+      color: #cccdce; }
+
+.footer-center {
+  background-color: #333;
+  border-bottom: 1px solid #3d3d3d;
+  padding: 0 10rem; }
+  .footer-center__menubox {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .footer-center__box {
+    margin: 0 2rem;
+    flex: 1;
+    padding: 2rem 0; }
+    .footer-center__box h3 {
+      color: #fff;
+      text-transform: uppercase; }
+    .footer-center__box:not(:last-child) {
+      border-right: 1px solid #3d3d3d; }
+    .footer-center__box:last-child ul {
+      list-style-type: none; }
+    .footer-center__box ul {
+      list-style-type: ">"; }
+      .footer-center__box ul li {
+        color: #dadada;
+        font-size: 1.1rem; }
+        .footer-center__box ul li a {
+          display: block;
+          padding: 1rem 0;
+          text-decoration: none;
+          padding-left: .7rem;
+          color: inherit;
+          transition: all .4s; }
+          .footer-center__box ul li a:hover {
+            color: #0083c1; }
+
+.footer-bottom {
+  background-color: #444;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 10rem;
+  color: #dadada; }
 
 .admin-breadcrumb {
   display: flex;

@@ -1,0 +1,92 @@
+.footer-container {
+    width: 100%;
+}
+
+.footer-top {
+    background-color: $color-black-4;
+    @include flexItems(center);
+    padding: 2rem 0;
+    &__heading {
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $text-color-secondary;
+    }
+    &__suscribe {
+        flex-basis: 35%;
+        margin: 0 1rem;
+        height: 4rem;
+        border-radius: $border-radius-small-2;
+        color: inherit;
+        font-family: inherit;
+        font-size: inherit;
+        outline: none;
+        border: 1px solid #cdcdcd;
+        padding-left: 1rem;
+
+        &:focus {
+            width: 100%;
+            outline: none;
+            background-color: $color-grey-light-3;
+        }
+
+        &::-webkit-input-placeholder {
+            font-weight: 200;
+            color: $color-grey-light;
+        }
+    }
+
+}
+
+.footer-center {
+    background-color: $color-black-3;
+    border-bottom: 1px solid rgb(61, 61, 61);
+    padding: 0 10rem;
+    
+    &__menubox {
+        @include flexItems(center);
+    }
+    &__box {
+        margin: 0 2rem;
+        flex: 1;
+        padding: 2rem 0;
+        h3 {
+            color: $text-color-secondary;
+            text-transform: uppercase;
+        }
+        &:not(:last-child) {
+            border-right: 1px solid rgb(61, 61, 61);
+        }
+        &:last-child {
+            ul {
+                list-style-type: none;
+            }
+        }
+        ul {
+            list-style-type: ">";
+            li {
+                color: $text-color-secondary-2;
+                font-size: 1.1rem;
+                a {
+                    display: block;
+                    padding: 1rem 0;
+                    text-decoration: none;
+                    padding-left: .7rem;
+                    color: inherit;
+                    transition: all .4s;
+                    &:hover {
+                        color: $color-primary;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.footer-bottom {
+    background-color: $color-black-4;
+    @include flexItems(space-between);
+    padding: 2rem 10rem;
+    color: $text-color-secondary-2;
+}
