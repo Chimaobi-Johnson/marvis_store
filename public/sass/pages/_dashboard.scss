@@ -1,0 +1,19 @@
+.main-contentbox {
+    flex: 1;
+    margin-left: 2rem;
+}
+
+.user-dasboard-container {
+    h2 {
+        text-transform: uppercase;
+    }
+    &__bottom {
+        margin-top: 3rem;
+    }
+}
+
+.user-dashboard-infobox {
+    ul {
+        list-style-type: none;
+    }
+}

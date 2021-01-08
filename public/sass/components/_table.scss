@@ -28,3 +28,34 @@
     }
 }
 
+
+.front-table-container {
+    margin-top: 3rem;
+    background-color: $color-white;
+    font-size: 1.3rem;
+    h4 {
+        text-transform: uppercase;
+    }
+    .orders-table {
+        border-collapse: collapse;
+        width: 100%;
+        td {
+            border-bottom: 1px solid #ddd;
+            padding: .8rem;
+        } 
+        th {
+            border-top: 3x solid #ddd;
+            border-bottom: 3px solid #ddd;
+            padding: .8rem;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            color: $text-color-primary-light;
+        }
+    }
+}

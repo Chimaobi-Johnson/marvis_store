@@ -12,6 +12,9 @@ body {
   box-sizing: border-box;
   font-family: 'Baloo 2', cursive; }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #2c2c2c; }
+
 .main {
   font-size: 1.5rem; }
 
@@ -184,6 +187,30 @@ body {
       text-align: left;
       background-color: darkslategray;
       color: white; }
+
+.front-table-container {
+  margin-top: 3rem;
+  background-color: #fff;
+  font-size: 1.3rem; }
+  .front-table-container h4 {
+    text-transform: uppercase; }
+  .front-table-container .orders-table {
+    border-collapse: collapse;
+    width: 100%; }
+    .front-table-container .orders-table td {
+      border-bottom: 1px solid #ddd;
+      padding: .8rem; }
+    .front-table-container .orders-table th {
+      border-top: 3x solid #ddd;
+      border-bottom: 3px solid #ddd;
+      padding: .8rem; }
+    .front-table-container .orders-table tr:hover {
+      background-color: #ddd; }
+    .front-table-container .orders-table th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      color: #3a3a3a; }
 
 .form-control {
   width: 90%;
@@ -544,7 +571,8 @@ body {
       font-size: 2rem; }
     .header-nav__sidenav .sidenav-text-container h2 {
       text-transform: uppercase;
-      padding-left: 1rem; }
+      padding-left: 1rem;
+      color: #fff; }
   .header-nav__info {
     display: flex;
     align-items: center;
@@ -839,3 +867,16 @@ body {
 
 .registeration-container__form {
   padding-top: 6rem; }
+
+.main-contentbox {
+  flex: 1;
+  margin-left: 2rem; }
+
+.user-dasboard-container h2 {
+  text-transform: uppercase; }
+
+.user-dasboard-container__bottom {
+  margin-top: 3rem; }
+
+.user-dashboard-infobox ul {
+  list-style-type: none; }
