@@ -778,6 +778,12 @@ body {
     justify-content: flex-start;
     margin: 1rem 0; }
     .home-blog-card__statbox--postedby {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #636363;
       font-size: 1.1rem; }
       .home-blog-card__statbox--postedby:not(:first-child) {
-        margin-left: 1rem; }
+        margin-left: 1.5rem; }
+      .home-blog-card__statbox--postedby span:last-child {
+        margin-left: .7rem; }

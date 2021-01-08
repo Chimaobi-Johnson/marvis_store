@@ -101,9 +101,16 @@
         @include flexItems(flex-start);
         margin: 1rem 0;
         &--postedby {
+            @include flexItems(space-between);
+            color: $text-color-primary-light-2;
             font-size: 1.1rem;
             &:not(:first-child) {
-                margin-left: 1rem;
+                margin-left: 1.5rem;
+            }
+            span {
+                &:last-child {
+                    margin-left: .7rem;
+                }
             }
         }
     }
