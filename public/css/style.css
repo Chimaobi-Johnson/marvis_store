@@ -84,6 +84,18 @@ body {
 .btn-lg {
   padding: 2rem 3.5rem; }
 
+.btn-home {
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  padding: 1rem 2rem;
+  transition: all .6s;
+  margin-top: 1rem;
+  cursor: pointer; }
+  .btn-home:hover {
+    border: 1px solid #014463;
+    background-color: #0083c1; }
+
 .statbox-container {
   display: flex;
   align-items: center;
@@ -202,17 +214,6 @@ body {
     padding-top: 1rem; }
   .product-card__price {
     font-weight: bold; }
-  .product-card__btn {
-    text-transform: uppercase;
-    outline: none;
-    border: none;
-    padding: 1rem 2rem;
-    transition: all .6s;
-    margin-top: 1rem;
-    cursor: pointer; }
-    .product-card__btn:hover {
-      border: 1px solid #014463;
-      background-color: #0083c1; }
 
 .hotdeal-image {
   position: relative; }
@@ -669,3 +670,36 @@ body {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 3rem; }
+
+.home-blog-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 10rem; }
+
+.home-blog-title {
+  margin: 0 10rem;
+  padding: 2rem 0;
+  border-bottom: 4px solid #eaeaea; }
+
+.home-blog-card {
+  flex-basis: 49%;
+  padding: 0 1rem; }
+  .home-blog-card__image {
+    width: 100%; }
+    .home-blog-card__image img {
+      width: 100%; }
+  .home-blog-card__contentbox {
+    padding: 1rem 0; }
+    .home-blog-card__contentbox p {
+      padding-bottom: 2rem;
+      font-size: 1.2rem; }
+  .home-blog-card__statbox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 1rem 0; }
+    .home-blog-card__statbox--postedby {
+      font-size: 1.1rem; }
+      .home-blog-card__statbox--postedby:not(:first-child) {
+        margin-left: 1rem; }
