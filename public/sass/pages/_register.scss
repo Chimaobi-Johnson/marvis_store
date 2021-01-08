@@ -1,0 +1,14 @@
+.registeration-container {
+    &__info {
+        padding-top: 3rem;
+        h3 {
+            padding: 2rem 0;
+        }
+        p {
+            padding-bottom: 5rem;
+        }
+    }
+    &__form {
+        padding-top: 6rem;
+    }
+}
