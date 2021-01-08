@@ -84,3 +84,15 @@
         background-color: $color-primary;
     }
 }
+
+.btn-regular {
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    padding: 1rem 2rem;
+    transition: all .6s;
+    margin-top: 1rem;
+    background-color: $color-primary;
+    cursor: pointer;
+    color: $text-color-secondary;
+}

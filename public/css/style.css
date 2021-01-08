@@ -99,6 +99,17 @@ body {
     border: 1px solid #014463;
     background-color: #0083c1; }
 
+.btn-regular {
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  padding: 1rem 2rem;
+  transition: all .6s;
+  margin-top: 1rem;
+  background-color: #0083c1;
+  cursor: pointer;
+  color: #fff; }
+
 .statbox-container {
   display: flex;
   align-items: center;
@@ -787,3 +798,13 @@ body {
         margin-left: 1.5rem; }
       .home-blog-card__statbox--postedby span:last-child {
         margin-left: .7rem; }
+
+.login-container__info {
+  padding-top: 3rem; }
+  .login-container__info h3 {
+    padding: 2rem 0; }
+  .login-container__info p {
+    padding-bottom: 5rem; }
+
+.login-container__form {
+  padding-top: 8rem; }
