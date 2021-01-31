@@ -1,0 +1,40 @@
+{
+  "name": "marvis_store",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chimaobi-Johnson/marvis_store.git"
+  },
+  "keywords": [
+    "chimaobi",
+    "wogu",
+    "marvis",
+    "store",
+    "marvis-store",
+    "portfolio",
+    "app",
+    "javascript",
+    "html",
+    "css"
+  ],
+  "author": "Wogu Chimaobi (MarvTech)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chimaobi-Johnson/marvis_store/issues"
+  },
+  "homepage": "https://github.com/Chimaobi-Johnson/marvis_store#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"  
+  }
+}
