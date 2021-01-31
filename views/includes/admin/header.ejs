@@ -1,0 +1,31 @@
+ <!--HEADER START-->
+ <div class="admin-header">
+    <div class="admin-header__left">
+        <div onclick="showMenu('admin-add-container')" class="admin-header__addbutton">
+            <span><i class="fa fa-plus" aria-hidden="true"></i></span>
+            <h5>New</h5>
+        </div>
+        <div onblur="showMenu('admin-add-container')" id="admin-add-container" class="admin-add-container">
+            <ul>
+                <li onclick="showMenu('admin-add-container')"><a href="./users/adduser.html">Add User</a></li>
+                <li onclick="showMenu('admin-add-container')"><a href="#">Add Post</a></li>
+                <li onclick="showMenu('admin-add-container')"><a href="./products/addproduct.html">Add Product</a></li>
+                <li onclick="showMenu('admin-add-container')"><a href="./categories/addcategory.html">Add Category</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="admin-header__right">
+        <div class="admin-header__searchcontainer">
+            <input type="search" name="adminsearch" placeholder="Search..." value="" />
+            <button class="admin-header__searchicon"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </div>
+        <div class="admin-header__notificationcontainer">
+            <i class="fa fa-bell-o" aria-hidden="true"></i>
+            <span class="admin-notification-number">12</span>
+        </div>
+        <div class="admin-header__dpcontainer">
+            <img src="https://picsum.photos/id/1005/150/150" alt="" />
+        </div>
+    </div>
+</div>
+<!--HEADER END-->

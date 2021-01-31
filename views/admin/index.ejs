@@ -1,0 +1,137 @@
+
+<%- include('../includes/admin/head.ejs') %>
+
+
+<div class="dashboard-wrapper">
+    
+    <%- include('../includes/admin/sidebar.ejs') %>
+
+    <div class="dashboard-content">
+
+        <%- include('../includes/admin/header.ejs') %>
+
+        <div class="dashboard-content__main">
+            <h4>Hi Jone, Welcome back</h4>
+            <p>Awesome portfolio dashboard</p>
+            <div class="admin-breadcrumb align-flexstart">
+                <div>Dashboard</div>
+            </div>
+            <div class="row align-flexstart">
+                <div class="col-1-of-3">
+                    <div class="statbox-container">
+                        <div class="statbox">
+                            <div class="statbox__left">
+                                <img src="../images/icons/iconfinder_box_289621.png" alt="icon" />
+                            </div>
+                            <div class="statbox__right">
+                                <p>Products</p>
+                                <span>203</span>
+                            </div>
+                        </div>
+                        <div class="statbox">
+                            <div class="statbox__left">
+                                <img src="../images/icons/iconfinder_compose_1055085.png" alt="icon" />
+                            </div>
+                            <div class="statbox__right">
+                                <p>Posts</p>
+                                <span>203</span>
+                            </div>
+                        </div>
+                        <div class="statbox">
+                            <div class="statbox__left">
+                                <img src="../images/icons/iconfinder_comments_6586151.png" alt="icon" />
+                            </div>
+                            <div class="statbox__right">
+                                <p>Comments</p>
+                                <span>203</span>
+                            </div>
+                        </div>
+                        <div class="statbox">
+                            <div class="statbox__left">
+                                <img src="../images/icons/iconfinder_stack_1287510.png" alt="icon" />
+                            </div>
+                            <div class="statbox__right">
+                                <p>Categories</p>
+                                <span>203</span>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+                <div class="col-2-of-3">
+                    <div class="line-chart-container">
+                        <canvas id="reportChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <section class="grid-test">
+            <div class="row">
+                <div class="col-1-of-2">
+                    Col 1 of 2
+                </div>
+                <div class="col-1-of-2">
+                    Col 1 of 2
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-3">
+                    Col 1 of 3
+                </div>
+                <div class="col-1-of-3">
+                    Col 1 of 3
+                </div>
+                <div class="col-1-of-3">
+                    Col 1 of 3
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-3">
+                    Col 1 of 3
+                </div>
+                <div class="col-2-of-3">
+                    Col 2 of 3
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-2-of-4">
+                    Col 2 of 4
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-4">
+                    Col 1 of 4
+                </div>
+                <div class="col-3-of-4">
+                    Col 3 of 4
+                </div>
+            </div>
+        </section> -->
+        
+     </div> <!-- end of dashboard content -->
+
+
+</div>
+
+
+<%- include('../includes/admin/end.ejs') %>
