@@ -1,0 +1,115 @@
+<%- include('../includes/head.ejs') %>
+
+<%- include('../includes/header.ejs') %>
+
+
+<section class="content-box align-flexstart">
+
+    <%- include('../includes/sidebar.ejs') %>
+
+    <div class="main-contentbox">
+        <div class="user-dasboard-container">
+            <div class="user-dasboard-container__top">
+                <h2>My Dashboard</h2>
+                <h4>Hello, John Doe!</h4>
+                <p>From your My Account Dashboard you have the ability to view a snapshot of your recent account activity 
+                    and update your account information. 
+                    Select a link below to view or edit information.
+                </p>
+                <div class="front-table-container">
+                    <h4>Recent Orders</h4>
+                    <table class="orders-table">
+                        <tr>
+                            <th>Order #</th>
+                            <th>Date</th>
+                            <th>Ship To</th>
+                            <th>Order Total</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>500000002</td>
+                            <td>9/10/21</td>
+                            <td>John Doe</td>
+                            <td>$5.00</td>
+                            <td>Pending</td>
+                            <td>View Order | Reorder</td>
+                        </tr>
+                        <tr>
+                            <td>500000002</td>
+                            <td>9/10/21</td>
+                            <td>John Doe</td>
+                            <td>$5.00</td>
+                            <td>Pending</td>
+                            <td>View Order | Reorder</td>
+                        </tr>
+                      </table>
+
+                </div>
+
+            </div>
+            <div class="user-dasboard-container__bottom">
+                
+                <h2>Account Information</h2>
+                <div class="row mb-30">
+                    <div class="col-1-of-2">
+                        <div class="user-dashboard-infobox">
+                            <h4>Contact Information</h4>
+                            <ul>
+                                <li><a href="#">Edit</a></li>
+                                <li>John Doe</li>
+                                <li>jone-doe@example.com</li>
+                                <li>Change Password</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-1-of-2">
+                        <div class="user-dashboard-infobox">
+                            <h4>Newsletters</h4>
+                            <ul>
+                                <li><a href="#">Edit</a></li>
+                                <li>You are currently not subscribed to any newsletter.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>Address Book</h2>
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <div class="user-dashboard-infobox">
+                            <h4>Primary Billing Address</h4>
+                            <ul>
+                                <li>John Doe</li>
+                                <li>USA</li>
+                                <li>Anytown, Alabama, 46532</li>
+                                <li>United States</li>
+                                <li>T: 454541</li>
+                                <li><a href="#">Edit Address</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-1-of-2">
+                        <div class="user-dashboard-infobox">
+                            <h4>Primary Shipping Address</h4>
+                            <ul>
+                                <li>John Doe</li>
+                                <li>USA</li>
+                                <li>Anytown, Alabama, 46532</li>
+                                <li>United States</li>
+                                <li>T: 454541</li>
+                                <li><a href="#">Edit Address</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+           
+    </div>
+
+</section>
+
+<%- include('../includes/footer.ejs') %>
+
+<%- include('../includes/end.ejs') %>
