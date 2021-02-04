@@ -10,6 +10,9 @@ router.get('/login', (req, res) => {
       });
 });
 
+router.post('/login', authController.login);
+
+router.post('/logout', authController.logout);
 
 router.get('/register', (req, res) => {
     res.render('store/register', {

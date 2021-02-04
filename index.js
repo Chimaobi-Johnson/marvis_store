@@ -5,11 +5,13 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const session = require('express-session');
 const MongoDBStore = require('connect-mongodb-session')(session);
+const csrf = require('csurf');
 
 const keys = require('./config/keys');
 // const errorController = require('./controllers/error');
 
 const app = express();
+const csrfProtection = csrf();
 
 app.set('view engine', 'ejs');
 app.set('views', 'views');
@@ -23,7 +25,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 const store = new MongoDBStore({
-    uri: MONGODB_URI,
+    uri: keys.MONGO_URI,
     collection: 'sessions'
 });
 
@@ -32,6 +34,7 @@ app.use(session({ secret: keys.SESSION_SECRET, resave: false, saveUninitialized:
 app.use('/admin', adminRoutes);
 app.use(storeRoutes);
 app.use(authRoutes);
+app.use(csrfProtection);
 
 // app.use(errorController.get404);
 

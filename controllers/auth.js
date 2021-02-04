@@ -4,7 +4,6 @@ const bcrypt = require('bcryptjs');
 const User = require('../model/User');
 
 exports.login = (req, res, next) => {
-
 const { email, password } = req.body;
 
 User.findOne({ email: email })
@@ -44,6 +43,13 @@ error.httpStatusCode = 500;
 return next(error);
 });
 
+}
+
+exports.logout = (req, res, next) => {
+    req.session.destroy(err => {
+        console.log(err);
+        res.redirect('/');
+    });
 }
 
 
