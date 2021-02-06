@@ -1,4 +1,5 @@
 const express = require('express');
+const { check } = require('express-validator');
 
 const authController = require('../controllers/auth');
 const router = express.Router();
@@ -14,14 +15,9 @@ router.post('/login', authController.login);
 
 router.post('/logout', authController.logout);
 
-router.get('/register', (req, res) => {
-    res.render('store/register', {
-        pageTitle: 'Marvis Store - Register',
-        path: '/store/register'
-      });
-});
+router.get('/register', authController.getRegister);
 
-router.post('/register', authController.register);
+router.post('/register', check('email').isEmail(), authController.register);
 
 
 module.exports = router;

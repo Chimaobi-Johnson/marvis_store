@@ -2,6 +2,7 @@ const crypto = require('crypto');
 
 const bcrypt = require('bcryptjs');
 const User = require('../model/User');
+const { validationResult } = require('express-validator/check');
 
 exports.login = (req, res, next) => {
 const { email, password } = req.body;
@@ -53,9 +54,46 @@ exports.logout = (req, res, next) => {
 }
 
 
+exports.getRegister = (req, res, next) => {
+  let message = req.flash('error');
+  if (message.length > 0) {
+    message = message[0];
+  } else {
+    message = null;
+  }
+  res.render('store/register', {
+    path: '/register',
+    pageTitle: 'Register',
+    errorMessage: message,
+    oldInput: {
+      email: '',
+      password: '',
+      confirmPassword: ''
+    },
+    validationErrors: []
+  });
+}
+
 exports.register = (req, res, next) => {
   const { firstName, lastName, gender, email, password } = req.body;
-
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    console.log(errors.array());
+    return res.status(422).render('/register', {
+      path: '/register',
+      pageTitle: 'Register',
+      errorMessage: errors.array()[0].msg,
+      oldInput: {
+        firstName,
+        lastName,
+        gender,
+        email,
+        password,
+        confirmPassword: req.body.confirmPassword
+      },
+      validationErrors: errors.array()
+    });
+  }
   bcrypt
     .hash(password, 12)
     .then(hashedPassword => {

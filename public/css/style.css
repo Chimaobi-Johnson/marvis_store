@@ -69,6 +69,9 @@ h1, h2, h3, h4, h5, h6 {
 .mb-70 {
   margin-bottom: 7rem !important; }
 
+.alert {
+  padding: .8rem 1.2rem; }
+
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
