@@ -43,7 +43,11 @@ User.findOne({ email: email })
             req.session.isLoggedIn = true;
             req.session.user = user;
             return req.session.save(err => {
-            res.redirect('/');
+              if(req.session.user.role === 'suscriber') {
+                res.redirect('/');
+              } else {
+                res.redirect('/admin');
+              }
             });
         }
         return res.status(422).render('store/login', {
