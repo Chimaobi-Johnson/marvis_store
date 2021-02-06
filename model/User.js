@@ -3,6 +3,8 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
+  image: { type: String, required: true },
+  imageId: { type: String, required: true },
   firstName: {
     type: String,
     required: true
@@ -26,10 +28,16 @@ const userSchema = new Schema({
   },
   role: {
     type: String,
-    default: 'admin'
+    default: 'suscriber'
   },
   resetToken: String,
   resetTokenExpiration: Date,
+  posts: [
+    {
+			type: Schema.Types.ObjectId,
+			ref: 'Post'
+		}
+  ],
   cart: {
     items: [
       {
