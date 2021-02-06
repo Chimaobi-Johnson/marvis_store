@@ -9,9 +9,11 @@
             <div class="registeration-container__form">
                 <h3>REGISTERED CUSTOMERS</h3>
                 <p>If you have an account with us, please log in</p>
+                <% if(errorMessage) { %> 
                 <div class="alert alert-error">
-                    <p>Sorry operation is not possible</p>
+                    <p><%= errorMessage %></p>
                 </div>
+                <% } %> 
                 <form action="/register" method="POST">
                 <div class="row mb-20">
                     <div class="col-1-of-2">

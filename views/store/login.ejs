@@ -19,6 +19,16 @@
             <div class="login-container__form">
                 <h3>REGISTERED CUSTOMERS</h3>
                 <p>If you have an account with us, please log in</p>
+                <% if(message) { %>
+                    <div class="alert alert-success">
+                        <p><%= message %> </p>
+                    </div>
+                <% } %>  
+                <% if(errorMessage) { %>
+                    <div class="alert alert-error">
+                        <p><%= errorMessage %> </p>
+                    </div>
+                <% } %>  
                 <form action="/login" method="POST">
                     <div class="form-control">
                         <label class="text-label" for="email">E-mail</label>
@@ -29,6 +39,7 @@
                         <input class="text-input" type="password" placeholder="Enter Password" name="password" id="password" />
                     </div>
                     <div class="form-control justify-flexstart mt-50">
+                        <input type="hidden" name="_csrf" value="<%= csrfToken %>" />
                         <input type="submit" class="btn-regular btn-md" value="Login" />
                     </div>
                 </form>

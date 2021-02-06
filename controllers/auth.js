@@ -4,13 +4,38 @@ const bcrypt = require('bcryptjs');
 const User = require('../model/User');
 const { validationResult } = require('express-validator/check');
 
+exports.getLogin = (req, res, next) => {
+  let message = req.flash('regSuccess');
+  if (message.length > 0) {
+    message = message[0];
+  } else {
+    message = null;
+  }
+    res.render('store/login', {
+        pageTitle: 'Marvis Store - Login',
+        path: '/store/login',
+        message: message,
+        errorMessage: null
+    });
+}
+
 exports.login = (req, res, next) => {
 const { email, password } = req.body;
 
 User.findOne({ email: email })
 .then(user => {
     if (!user) {
-        console.log('user not found');
+        return res.status(422).render('store/login', {
+          path: '/login',
+          pageTitle: 'Login',
+          message: null,
+          errorMessage: 'Invalid email or password.',
+          oldInput: {
+          email: email,
+          password: password
+          },
+          validationErrors: []
+      });
     }
     bcrypt.compare(password, user.password)
     .then(doMatch => {
@@ -18,13 +43,13 @@ User.findOne({ email: email })
             req.session.isLoggedIn = true;
             req.session.user = user;
             return req.session.save(err => {
-            console.log(err);
             res.redirect('/');
             });
         }
-        return res.status(422).render('/login', {
+        return res.status(422).render('store/login', {
             path: '/login',
             pageTitle: 'Login',
+            message: null,
             errorMessage: 'Invalid email or password.',
             oldInput: {
             email: email,
@@ -34,8 +59,8 @@ User.findOne({ email: email })
         });
     })
     .catch(err => {
-    console.log(err);
-    res.redirect('/login');
+      console.log(err);
+      res.redirect('/login');
     });
 })
 .catch(err => {
@@ -45,14 +70,6 @@ return next(error);
 });
 
 }
-
-exports.logout = (req, res, next) => {
-    req.session.destroy(err => {
-        console.log(err);
-        res.redirect('/');
-    });
-}
-
 
 exports.getRegister = (req, res, next) => {
   let message = req.flash('error');
@@ -79,7 +96,7 @@ exports.register = (req, res, next) => {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
     console.log(errors.array());
-    return res.status(422).render('/register', {
+    return res.status(422).render('store/register', {
       path: '/register',
       pageTitle: 'Register',
       errorMessage: errors.array()[0].msg,
@@ -108,6 +125,7 @@ exports.register = (req, res, next) => {
       return user.save();
     })
     .then(result => {
+      req.flash('regSuccess', 'Registeration successful. You can now login with your details.')
       res.redirect('/login');
     })
     .catch(err => {
@@ -117,4 +135,12 @@ exports.register = (req, res, next) => {
       return next(error);
     });
 };
+
+
+exports.logout = (req, res, next) => {
+  req.session.destroy(err => {
+      console.log(err);
+      res.redirect('/');
+  });
+}
 

@@ -1,12 +1,17 @@
 .alert {
     padding: .8rem 1.2rem;
-    border: 2px solid
+    border-radius: $border-radius-small;
 }
 
 .alert-error {
-
+    background-color: crimson;
+    color: #eaeaea;
+    border: 2px solid red;
 }
 
 .alert-success {
-
+    background-color: darkgreen;
+    color: #eaeaea;
+    border: 2px solid green;
 }
+

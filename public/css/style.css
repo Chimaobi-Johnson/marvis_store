@@ -70,7 +70,18 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 7rem !important; }
 
 .alert {
-  padding: .8rem 1.2rem; }
+  padding: .8rem 1.2rem;
+  border-radius: 0.5rem; }
+
+.alert-error {
+  background-color: crimson;
+  color: #eaeaea;
+  border: 2px solid red; }
+
+.alert-success {
+  background-color: darkgreen;
+  color: #eaeaea;
+  border: 2px solid green; }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;

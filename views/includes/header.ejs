@@ -17,8 +17,16 @@
                         <li><a href="#">Wishlist</a></li>
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">Company</a></li>
-                        <li><a href="/login">Log in</a></li>
-                        <li><a href="/logout">Log out</a></li>
+                        <% if(isAuthenticated) { %>
+                            <li>
+                                <form action="/logout" method="POST">
+                                    <input type="hidden" name="_csrf" value="<%= csrfToken %>" />
+                                    <input type="submit" value="Log out" />
+                                </form>
+                            </li>
+                        <% } else { %>  
+                            <li><a href="/login">Log in</a></li>
+                        <% } %> 
                     </ul>
                 </div>
             </div>
