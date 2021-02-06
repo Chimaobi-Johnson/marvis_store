@@ -3,8 +3,8 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
-  image: { type: String, required: true },
-  imageId: { type: String, required: true },
+  image: { type: String },
+  imageId: { type: String },
   firstName: {
     type: String,
     required: true
@@ -26,6 +26,8 @@ const userSchema = new Schema({
     type: String,
     required: true
   },
+  address: String,
+  country: String,
   role: {
     type: String,
     default: 'suscriber'

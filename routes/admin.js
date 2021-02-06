@@ -2,17 +2,29 @@
 
 const express = require('express');
 
-// const adminController = require('../controllers/admin');
+const adminController = require('../controllers/admin');
+const { validateRegisterForm } = require('../validators/validators');
 
 const router = express.Router();
 
-router.get('/', (req, res) => {
-    res.render('admin', {
-        pageTitle: 'Admin',
-        path: '/admin'
-      });
-});
+router.get('/', adminController.getDashboard);
 
+router.get('/users', adminController.getUsers);
+
+router.get('/user/add', adminController.getAddUser);
+
+router.get('/user/edit/:id', adminController.getEditUser);
+
+router.get('/products', adminController.getProducts);
+
+router.get('/accounts', adminController.getAccounts);
+
+router.get('/posts', adminController.getPosts);
+
+router.get('/comments', adminController.getComments);
+
+
+router.post('/user/add', validateRegisterForm, adminController.addUser);
 
 
 module.exports = router;

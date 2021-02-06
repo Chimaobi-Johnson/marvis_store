@@ -1,0 +1,67 @@
+
+<%- include('../includes/admin/head.ejs') %>
+
+
+<div class="dashboard-wrapper">
+    
+    <%- include('../includes/admin/sidebar.ejs') %>
+
+    <div class="dashboard-content">
+
+        <%- include('../includes/admin/header.ejs') %>
+
+        <div class="dashboard-content__main">
+
+            <%- include('../includes/admin/greeting.ejs') %> 
+
+            <div class="admin-breadcrumb align-flexstart">
+                <div>Dashboard</div>
+                <div>/</div>
+                <div>Users</div>
+            </div>
+            <div class="table-container">
+
+                <table class="users-table">
+                    <tr>
+                      <th>S/N</th>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>Gender</th>
+                      <th>Actions</th>
+                    </tr>
+                    <% if(users) { %>
+                        <% if(users.length != 0) { %>
+                            
+                            <% users.forEach((user, index) => { %>
+                                <tr>
+                                    <td><%= index + 1 %> </td>
+                                    <td><%= user.firstName %> </td>
+                                    <td><%= user.lastName %> </td>
+                                    <td><%= user.gender %> </td>
+                                    <td><div>
+                                        <i class="fa fa-eye" aria-hidden="true"></i>
+                                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                        <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                   </div></td>
+                                </tr>
+                            <% }) %>
+
+                            <% } else { %> 
+                                <p>No users found</p>
+                                <% } %>  
+                        <% } else { %>  
+                            <p>Error. Check connection settings and try again</p>
+                            <% } %> 
+                   
+                  </table>
+
+            </div>
+        </div>
+        
+     </div> <!-- end of dashboard content -->
+
+
+</div>
+
+
+<%- include('../includes/admin/end.ejs') %>
