@@ -26,5 +26,7 @@ router.get('/comments', adminController.getComments);
 
 router.post('/user/add', validateRegisterForm, adminController.addUser);
 
+router.post('/user/update', validateRegisterForm, adminController.updateUser);
+
 
 module.exports = router;

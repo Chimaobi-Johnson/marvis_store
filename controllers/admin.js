@@ -55,10 +55,48 @@ exports.getAddUser = (req, res) => {
 
 
 exports.getEditUser = (req, res) => {
-    res.render('admin/editUser', {
-        pageTitle: 'Edit Users',
-        path: '/admin/user/edit/:id',
-    });
+    let flashMsg = req.flash('userUpdateSuccess');
+    if (flashMsg.length > 0) {
+        flashMsg = flashMsg[0];
+      } else {
+        flashMsg = null;
+      }
+    User.findById(req.params.id).then(user => {
+        if(!user) {
+            res.render('admin/editUser', {
+                pageTitle: 'Edit Users',
+                path: '/admin/user/edit/:id',
+                flashMessage: flashMsg,
+                errorMessage: 'User not found',
+                oldInput: {
+                    firstName: '',
+                    lastName: '',
+                    gender: '',
+                    email: '',
+                    password: '',
+                    address: '', country: '', role: '', image: '',
+                    confirmPassword: ''
+                  }
+            });
+        }
+        res.render('admin/editUser', {
+            pageTitle: 'Edit Users',
+            path: '/admin/user/edit/:id',
+            flashMessage: flashMsg,
+            errorMessage: null,
+            oldInput: {
+                firstName: user.firstName,
+                lastName: user.lastName,
+                gender: user.gender,
+                email: user.email,
+                password: user.password,
+                address: user.address, country: user.country, role: user.role, image: user.image,
+                confirmPassword: user.confirmPassword
+            }
+        });
+    })
+
+    
 }
 
 exports.getProducts = (req, res) => {
@@ -141,4 +179,30 @@ exports.addUser = (req, res) => {
       error.httpStatusCode = 500;
       return next(error);
     });
+}
+
+exports.updateUser = (req, res) => {
+    const { firstName, lastName, gender, email, address, country, role, image, password } = req.body;
+    console.log(req.params)
+    User.updateOne({_id: req.params.id }, { ...req.body })
+    .then(user => {
+        console.log(user)
+        res.render('admin/editUser', {
+            pageTitle: 'Update Users',
+            path: '/admin/user/edit/:id',
+            flashMessage: flashMsg,
+            errorMessage: null,
+            oldInput: {
+                firstName: user.firstName,
+                lastName: user.lastName,
+                gender: user.gender,
+                email: user.email,
+                password: user.password,
+                address: user.address, country: user.country, role: user.role, image: user.image,
+                confirmPassword: user.confirmPassword
+            }
+        });
+    }).catch(err => {
+        console.log(err);
+    })
 }
